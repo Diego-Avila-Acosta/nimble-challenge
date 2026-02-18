@@ -61,11 +61,17 @@ function CandidateForm({candidate, setCandidate}) {
     }
 
     return (
-        <div>
-            <label>Email:</label>
-            <input type="email" name="email" value={email} onChange={handleInput} />
-            { error ? <label color="red">{error}</label> : null}
-            <button onClick={handleGetCandidate}>Conseguir datos</button>
+        <div className="container py-5">
+            <div className="mb-3">
+                <label for="email" className="form-label">Email:</label>
+                <input type="email" className="form-control" name="email" id="email" value={email} onChange={handleInput} />
+                <p></p>
+                { error ? <label color="red">{error}</label> : null}
+                <p></p>
+                <button className="btn btn-primary" onClick={handleGetCandidate}>Conseguir datos</button>
+            </div>
+
+
 
             { candidate.uuid ? 
                 <div>
