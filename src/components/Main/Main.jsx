@@ -21,7 +21,8 @@ function Main() {
             uuid: candidate.uuid,
             jobId,
             candidateId: candidate.candidateId,
-            repoUrl
+            repoUrl,
+            applicationId: candidate.applicationId
         }
 
         candidateService.post(payload).then((response) => {
