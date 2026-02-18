@@ -34,9 +34,9 @@ function Job ({id, title, postApplication}) {
                     <button 
                         className="btn btn-sm btn-outline-primary border-0 bg-primary bg-opacity-10 text-primary" 
                         title="Submit"
-                        onClick={() => handleSubmit}
+                        onClick={() => handleSubmit()}
                     >
-                        <i className="bi bi-eye-fill">Submit</i>
+                        Submit
                     </button>
                 </div>
             </td>
